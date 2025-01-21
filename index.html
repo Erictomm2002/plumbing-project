@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vite App</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href="output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Top Bar -->
+<div class="bg-primary text-white py-2 flex justify-center items-center sticky top-0">
+  <div
+    class="container max-w-[1080px] text-sm flex flex-wrap justify-center gap-x-4 gap-y-0.5 lg:justify-between items-center py-1">
+    <div class="flex items-center gap-x-1.5">
+      <img src="./images/user.svg" class="w-4 h-4"/>
+      <span>Rohrreinigung seit 2019</span>
+    </div>
+    <div class="flex items-center gap-x-1.5">
+      <img src="./images/clock.svg" class="w-4 h-4"/>
+      <span>Wir sind jeden Tag für Sie da 24/7</span>
+    </div>
+    <div class="flex items-center gap-x-1.5">
+      <img src="./images/phone.svg" class="w-4 h-4"/>
+      <a href="tel:01579 250 2608">01579 250 2608</a>
+    </div>
+    <div class="flex items-center gap-x-1.5">
+      <img src="./images/envelop.svg" class="w-4 h-4"/>
+      <a href="mailto:info@rohrreinigung-thiele.de">info@rohrreinigung-thiele.de</a>
+    </div>
+    <div class="flex items-center gap-x-1.5">
+      <img src="./images/car.svg" class="w-4 h-4"/>
+      <span>Schnell vor Ort</span>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="bg-white border-b-2 border-b-black sticky top-0 inset-x-0 z-50">
+  <div class="container max-w-[1080px] mx-auto py-3">
+    <div class="flex justify-between items-center">
+      <div class="w-48">
+        <img width="525" height="150"
+             src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/04/Rohrreinigung-Thiele-Logo-Webseite.svg"
+             class="attachment-full size-full wp-image-114" alt="Rohrreinigung Thiele Logo Webseite">
+      </div>
+
+      <!-- Desktop menu-->
+      <div class="hidden sm:grid sm:grid-cols-3 sm:gap-y-2 md:grid-cols-5 lg:flex lg:space-x-8 md:mx-2">
+        <a href="#"
+           class="text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary hover:border-primary transition text-center">Startseite</a>
+        <a href="#"
+           class="text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary hover:border-primary transition text-center">Über
+          Uns</a>
+        <a href="#"
+           class="text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary hover:border-primary transition text-center">Leistungen</a>
+        <a href="#"
+           class="text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary hover:border-primary transition text-center">Einsatzgebiete</a>
+        <a href="#"
+           class="text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary hover:border-primary transition text-center">Kontakt</a>
+      </div>
+      <a href="tel:01579 250 2608"
+         class="bg-secondary text-white px-6 py-2 rounded-md hover:bg-opacity-90 hidden lg:inline-block">
+        01579 250 2608
+      </a>
+      <div>
+        <img src="./images/bar.svg"
+             alt="Rohrreiniger Service"
+             class="size-10 bg-primary p-1 rounded-md sm:hidden mx-4"
+             onclick="toggleMenu()"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="sm:hidden bg-white shadow-lg hidden">
+    <a href="#"
+       class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Startseite</a>
+    <a href="#"
+       class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Über
+      Uns</a>
+    <a href="#"
+       class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Leistungen</a>
+    <a href="#"
+       class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Einsatzgebiete</a>
+    <a href="#"
+       class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Kontakt</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative bg-gray-100 py-12 blur-background">
+  <div class="container max-w-[1080px] mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Hero header-->
+      <div>
+        <p class="text-primary mb-2 font-bold">Professionelle Rohrreinigung zu Festpreisen</p>
+        <h1 class="text-4xl font-bold mb-6">
+          Rohrreinigung <span class="text-primary">Thiele</span>
+        </h1>
+
+        <!-- Hero content-->
+        <div class="space-y-4 mb-8">
+          <p class="text-gray-600 text-justify">
+            Sie suchen einen <strong>Rohrreiniger</strong> auf den Sie sich immer verlassen können?
+            Rohrreinigung Thiele ist ihr <strong>Partner für jede Art von verstopften Rohren in ihrer
+            Nähe!</strong>
+          </p>
+          <p class="text-gray-600 text-justify">
+            Wir befreien <strong>verstopfte Rohre jeder Art</strong> für Sie! Egal ob es sich um
+            <strong>verstopfte</strong> Toiletten, Siphons oder Abflüssen handelt. Mit einer professionellen
+            <strong>Rohr-und Abflussreinigung sicher sein!</strong>
+          </p>
+          <p class="text-gray-600 text-justify">
+            Wir helfen in der Regel <strong>noch am gleichen Tag</strong> und sorgen dafür das <strong>alles wieder
+            frei</strong> von Verstopfungen ist wie Sie es sich wünschen. Klingt interessant? Dann kontaktieren Sie
+            uns am besten noch heute!
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-y-4 justify-around">
+          <button class="bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90">
+            Anfrage Senden
+          </button>
+          <button class="bg-secondary text-white px-6 py-3 rounded-md hover:bg-opacity-90">
+            Jetzt Anrufen
+          </button>
+        </div>
+      </div>
+      <div class="h-full w-full">
+        <img
+          src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Jede-Rohrverstopfung-wird-befreit-1024x682.webp"
+          alt="Rohrreiniger Service"
+          class="rounded-lg shadow-xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="bg-primary text-white py-5">
+  <div class="container mx-auto px-4 max-w-[1080px]">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="flex items-center space-x-3">
+        <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg"/>
+        <span class="text-xl">Geprüfte Rohrreiniger</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg"/>
+        <span class="text-xl">Termine am gleichen Tag</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg"/>
+        <span class="text-xl">Jede Verstopfung wird gelöst</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blur-background">
+  <div class="container mx-auto max-w-[1080px] py-6">
+    <!-- Top Section -->
+    <div class="flex flex-col-reverse md:flex-row">
+      <!-- Left Image -->
+      <div class="w-full flex justify-center items-center md:basis-1/2">
+        <img
+          src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Nachkontrolle-der-Abflussreinigung-fuer-die-Sicherheit-1024x681.webp"
+          alt="Rohrreiniger bei der Arbeit"
+          class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
+        >
+      </div>
+
+      <!-- Right Content -->
+      <div class="bg-[#0F1A35] text-white p-8 space-y-3 md:basis-1/2 rounded-md mx-4 md:mx-0">
+        <h2 class="text-lg md:text-2xl font-medium">
+          Rohrreinigung Service Thiele in Ihrer Nähe
+        </h2>
+
+        <p class=" text-justify font-extralight">
+          Als Rohrreinigungsservicesind wir seit 2019 tätig und helfen immer schnell weiter. Die arbeiten sind routiniert,
+          professionell und stehts zuverlässig für gewerbliche und private Auftraggeber.
+        </p>
+
+        <p class=" text-justify font-extralight">
+          Die Fachmänner führen immer alles an notwendigem Werkzeug mit sich um Ihnen jeder Zeit bei jeglichen Anliegen
+          schnell und ohne Verzögerung weiter helfen zu können.
+        </p>
+
+        <p class="text-justify font-extralight">
+          Wir beraten Sie gerne persönlich am Telefon und direkt bei Ihnen vor Ort, um zu besprechen, welche Leistungen
+          genau benötigt werden. Kontaktieren Sie uns für ein Kennenlerngesprach.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row">
+      <!-- Left Content -->
+      <div class="bg-[#1B6F8F] text-white p-8 space-y-3 md:basis-1/2 rounded-md mx-4 md:mx-0">
+        <h2 class="text-lg md:text-2xl font-medium">
+          Alles und um Ihre Rohre
+        </h2>
+
+        <p class="text-justify font-extralight">
+          Unsere Spezialgebiete umfassen die Reinigung von Rohren und Abflüssen sowie die Behebung von Verstopfungen in
+          Toiletten, Abflüssen und Siphons im gesamten Haushalt.
+        </p>
+
+        <p class="text-justify font-extralight">
+          Zudem bieten wir einen rund um die Uhr verfügbaren Rohrreinigung Notdienst an, der innerhalb von 20 bis 40
+          Minuten vor Ort ist und umgehend alle Probleme löst.
+        </p>
+
+        <p class="text-justify font-extralight">
+          Keine Sorge, auch wenn Ihre Rohrleitungen in den Wänden verborgen sind und nicht direkt sichtbar – unsere
+          Experten beseitigen jede Verstopfung sicher und dauerhaft.
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full flex justify-center items-center md:basis-1/2">
+        <img
+          src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Verstopfte-Toiletten-werden-schnell-wieder-befreit-1024x682.webp"
+          alt="Toilette und Badezimmer"
+          class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-primary">
+  <div class="container mx-auto px-4 max-w-[1080px]">
+    <h2 class="text-4xl text-white font-semibold text-center mb-8">So funktioniert der Ablauf</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div
+          class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 font-semibold text-2xl text-primary">
+          1
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Kontaktieren Sie uns</h3>
+        <p class="text-gray-600">Rufen Sie uns einfach an oder senden Sie uns bequem eine Anfrage über unser Formular
+          und wir werden uns mit Ihnen in Kontakt setzten.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div
+          class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 font-semibold text-2xl text-primary">
+          2
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Der Monteur kommt vorbei</h3>
+        <p class="text-gray-600">Wenn wir mit Ihnen besprochen haben was bei Ihnen erledigt werden soll, kommt der
+          Fachmann zu Ihnen und macht sich einen Vorort Eindruck.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div
+          class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 font-semibold text-2xl text-primary">
+          3
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Schnelle Durchführung</h3>
+        <p class="text-gray-600">Nachdem alles geklärt wurde, fangen die Fachmänner mit der Arbeit an und führen diese
+          nach Ihren wünschen schnell und sauber durch. Schnelle Durchführung</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 blur-background">
+  <div class="container mx-auto px-4 max-w-[1080px]">
+    <!-- Section Title -->
+    <h2 class="text-center text-4xl font-bold mt-4 mb-16">
+      Unsere <span class="text-[#1B6F8F]">Leistungen</span>
+    </h2>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 4a4 4 0 100 8 4 4 0 000-8zM8 14a5 5 0 00-5 5v2h18v-2a5 5 0 00-5-5H8z" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Professionelle Monteure</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Die Fachmänner haben jahrelange Erfahrung im Bereich der Rohr- und Abflussreinigung und können Ihnen zu jeder
+          Zeit bei einer Rohrverstopfung helfen.
+        </p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 8h12v12H6zM8 4v4M16 4v4M7 20h10" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Toilette Verstopft</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Verstopfte Toiletten können auftreten und Ihnen den Freitag vermiesen. Das muss nicht sein, wir sind noch am
+          gleichen Tag da und lösen die Verstopfung für Sie.
+        </p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Waschbecken Verstopft</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Ein verstopftes Waschbecken in der Küche entsteht meistens mit Rückständen von Öl und Essensresten. Wir
+          befreien diese für Sie. Rufen Sie uns einfach an.
+        </p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 3v4M3 3v4M12 12v8" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Rohrreinigung</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Die Rohrreinigung gehört zu den Tagesaufgaben der Fachmänner und wird immer leidenschaftlich und professionell
+          ausgeführt. Keine Verstopfung ist sicher!
+        </p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M4 4h16v12H4zM2 20h20" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Badewanne Verstopft</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Harre, die falschen Reinigungsmittel oder sogar Kalkrückstände können dafür sorgen, dass das Wasser langsam
+          oder überhaupt nicht abfließt. Wir helfen schnell weiter!
+        </p>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M16 3h5v5M8 21H3v-5M21 16v5h-5M3 8V3h5" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Rohrreinigung Notdienst 24h</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Im Fall der Fälle hilft Ihnen der 24h Rohrreinigung Notdienst von Thiele weiter! Wir sind rund um die Uhr
+          erreichbar und der Monteur in 20 - 40 Minuten bei Ihnen!
+        </p>
+      </div>
+
+      <!-- Service 7 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Abflussreinigung</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Ein verstopfter Abfluss kann verschiedene Ursachen haben. Die Reinigung ist in den meisten Fällen einfach und
+          verläuft schnell, kann aber auch knifflig werden.
+        </p>
+      </div>
+
+      <!-- Service 8 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 20h12M12 4v16" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Siphon Verstopft</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Ein verstopftes Siphon im Badezimmer können wir ganz schnell für Sie befreien. Manchmal sitzt die Verstopfung
+          aber auch tiefer. Auch das ist kein Problem für uns.
+        </p>
+      </div>
+
+      <!-- Service 9 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-4">
+          <svg class="w-full h-full text-[#1B6F8F]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2l-8 4v12l8 4 8-4V6l-8-4z" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Rohrbruch Notdienst</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Ein Rohrbruch kann durch eine vernünftige Rohrreinigung vermieden werden. Aber wenn es dann doch brechen
+          sollte sind wir schnell bei Ihnen. Rufen Sie uns jetzt an!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary">
+  <div
+    class="container mx-auto px-4 max-w-[1080px] flex flex-wrap justify-center gap-y-4 md:justify-between items-center py-6">
+    <p class="text-white font-semibold text-3xl">
+      Überzeugt - Dann rufen Sie uns jetzt an
+    </p>
+    <a class="bg-secondary text-white px-6 py-2 rounded-md hover:bg-opacity-90 shadow-md">
+      Anfrage Senden
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="container mx-auto max-w-[1080px] my-6">
+    <!-- Top Section -->
+    <div class="flex flex-col-reverse md:flex-row">
+      <!-- Left Image -->
+      <div class="w-full flex justify-center items-center md:basis-1/2">
+        <img
+          src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Abflussverstopfungen-muessen-genau-identifiziert-werden-1024x681.webp"
+          alt="Rohrreiniger bei der Arbeit"
+          class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
+        >
+      </div>
+
+      <!-- Right Content -->
+      <div class="text-gray-900 p-8 space-y-3 md:basis-1/2 rounded-md">
+        <h2 class="text-2xl font-semibold">
+          Seit 2019 - Rohrreinigung in <span class="text-primary">Ihrer Nähe</span>
+        </h2>
+
+        <p class=" text-justify">
+          Im Laufe der Jahre hat der <strong>Rohrreinigung Service Thiele</strong> eine breite Palette an Verstopfungen
+          behoben und jedes
+          Anliegen gemeistert. Die Fachmänner erledigen alles schnell und effizient.
+        </p>
+
+        <p class=" text-justify">
+          Von der <strong>Beseitigung von Verstopfungen in Abflüssen</strong> über das Reparieren kleiner Anschlüsse bis
+          hin zur Lösung von
+          schweren Verstopfungen in Toiletten, sind wir ihr erfahrener Partner!
+        </p>
+
+        <p class="text-justify">
+          Profitieren Sie von der schnellen und problemlosen Abwicklung durch die Profis. <strong>Rufen Sie uns jetzt
+          einfach an und lassen</strong> Sie keine offene Frage mehr im Raum stehen. Wir helfen gerne!
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row">
+      <!-- Left Content -->
+      <div class="text-gray-900 p-8 space-y-3 md:basis-1/2 rounded-md">
+        <h2 class="text-2xl font-semibold">
+          24h Rohrreinigung Notdienst in <span class="text-primary">Ihrer Nähe</span>
+        </h2>
+
+        <p class="text-justify">
+          Es ist 22 Uhr, Sie bemerken Wasser auf dem <strong>Boden in Ihrem Café</strong> oder während Sie fernsehen. Ist
+          es ein Rohrbruch
+          oder eine Verstopfung?
+        </p>
+
+        <p class="text-justify">
+          Schnelle Hilfe ist gefragt. <strong>Entdecken Sie den Rohrreinigung Service Thiele</strong> in Ihrer Nähe –
+          zuverlässig und immer
+          bereit um Ihnen weiter zu helfen!
+        </p>
+
+        <p class="text-justify">
+          Rufen Sie uns an, schildern Sie das Problem, und <strong>unsere Fachmänner</strong> sind umgehend mit allem
+          Notwendigen bei
+          Ihnen. Wir sind rund um die Uhr für Sie da!
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full flex justify-center items-center md:basis-1/2">
+        <img
+          src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Tropfende-Rohre-wegen-einer-Rohrverstopfung-vermeiden-1024x681.webp"
+          alt="Toilette und Badezimmer"
+          class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-8">
+  <div class="container mx-auto">
+    <div class="mx-auto max-w-[1080px] px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center">Unser effizienter <span
+        class="text-primary">Rohrreinigung Service</span></h2>
+      <div class="flex flex-col md:flex-row md:justify-between gap-8 w-full">
+        <div class="space-y-4 basis-2/3">
+          <p class="text-justify">
+            Unser <strong>Netzwerk</strong> ist deutschlandweit vertreten, und wir bieten Ihnen als <strong>Rohrreinigung
+            Thiele</strong> erstklassigen
+            Service. Unabhängig davon, ob <strong>Sie gewerblicher oder privater Kunde sind</strong>, unsere Experten
+            geben stets ihr
+            Bestes für Sie auch im Notdienst!
+          </p>
+          <p class="text-justify">
+            <strong>Kontaktieren Sie uns noch heute</strong> und sichern Sie sich professionelle Unterstützung durch
+            Rohrreinigung
+            Thiele. Abflussreinigung von Experten! <strong>Wir sind rund um die Uhr für Sie</strong> da und beheben Ihre
+            Rohrverstopfungen schnell und effizient.
+          </p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10033.002453693054!2d9.915551923002814!3d53.57644711066834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b185e47c7dcd1f%3A0xc4d657ed11dfa9e5!2sLangenfelde!5e0!3m2!1sen!2s!4v1736671540933!5m2!1sen!2s"
+          referrerpolicy="no-referrer-when-downgrade" class="basis-1/3 rounded-lg"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto max-w-[1080px]">
+    <!-- Section Title -->
+    <h2 class="text-center text-4xl font-bold mb-12">
+      Unsere <span class="text-[#1B6F8F]">Einsatzgebiete</span>
+    </h2>
+
+    <!-- Cities Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-gray-700 text-center">
+      <!-- Column 1 -->
+      <div class="space-y-3">
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Berlin</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Hamburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">München</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Köln</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Frankfurt a.M</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Stuttgart</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Düsseldorf</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Saarbrücken</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Hamm</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Ludwigshafen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Oldenburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Mühlheim a.d.R</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Osnabrück</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Leverkusen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Heidelberg</a>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="space-y-3">
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Leipzig</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Dortmund</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Essen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bremen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Dresden</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Hannover</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Nürnberg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Darmstadt</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Solingen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Regensburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Herne</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Paderborn</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Neuss</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Ingolstadt</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Offenbach a.M</a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="space-y-3">
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Duisburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bochum</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Wuppertal</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bielefeld</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bonn</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Münster</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Mannheim</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Fürth</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Ulm</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Heilbronn</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Pforzheim</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Würzburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Wolfsburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Göttingen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bottrop</a>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="space-y-3">
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Karlsruhe</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Augsburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Wiesbaden</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Koblenz</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Gelsenkirchen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Aachen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Braunschweig</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Reutlingen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Erlangen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bremerhaven</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Gladbach</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Remscheid</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Trier</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Recklinghausen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Jena</a>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="space-y-3">
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Chemnitz</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Kiel</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Halle</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Magdeburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Freiburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Krefeld</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Mainz</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Moers</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Salzgitter</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Siegen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Gütersloh</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Hildesheim</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Hanau</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Kaiserslautern</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Troisdorf</a>
+      </div>
+
+      <!-- Column 6 -->
+      <div class="space-y-3">
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Lübeck</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Erfurt</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Oberhausen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Rostock</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Kassel</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Hagen</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Potsdam</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Bad Nauheim</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Brandenburg</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Celle</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Schwerin</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Soest</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Düren</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Werl</a>
+        <a href="#" class="block hover:text-[#1B6F8F] transition-colors">Borken</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary">
+  <div
+    class="container mx-auto px-4 max-w-[1080px] flex flex-wrap justify-center gap-y-4 md:justify-between items-center py-6">
+    <p class="text-white font-semibold text-2xl">
+      Überzeugt - Dann rufen Sie uns jetzt an
+    </p>
+    <a href="tel:01579 250 2608" class="bg-secondary text-white px-6 py-2 rounded-md hover:bg-opacity-90 shadow-md">
+      01579 250 2608
+    </a>
+  </div>
+</section>
+
+<section class="py-16 blur-background">
+  <div class="container mx-auto px-4 max-w-[1080px] space-y-8">
+    <!-- Main Title -->
+    <h2 class="text-center text-4xl font-semibold mb-16">
+      Der Rohrreinigung Service in <span class="text-[#1B6F8F]">Ihrer Nähe</span>
+    </h2>
+
+    <!-- Professional Plumbers Section -->
+    <div>
+      <h3 class="text-2xl font-medium mb-4">
+        Professionelle <span class="text-[#1B6F8F]">Rohrreiniger</span>
+      </h3>
+      <p class="text-gray-700 text-justify">
+        Das Team setzt sich aus <strong>erfahrenen Rohrreinigern zusammen</strong>, die sich durch ihre <strong>Fachkompetenz</strong>
+        und <strong>Zuverlässigkeit</strong> auszeichnen. Wir sind spezialisiert auf die <strong>schnelle und effiziente
+        Beseitigung</strong> aller Arten von <strong>Rohrproblemen</strong> in Ihrer Nähe und helfen <strong>gerne
+        weiter</strong>. Es sind oft nur die <strong>kleinen und selbstverständlichen</strong> Dinge die unseren
+        <strong>Alltag</strong>
+        erleichtern, darum ist es <strong>wichtig die Rohre</strong> und <strong>Wasserleitungen</strong> stehts
+        <strong>funktionieren</strong>. Vertrauen Sie auf unser <strong>Know-how</strong>, um Ihre <strong>Rohrleitungen
+        und Sanitäranlagen</strong> in einwandfreiem Zustand zu halten.
+      </p>
+    </div>
+
+    <!-- Drain Cleaning Section -->
+    <div>
+      <h3 class="text-2xl font-medium mb-4">
+        Rohr- und <span class="text-[#1B6F8F]">Abflussreinigung</span>
+      </h3>
+      <p class="text-gray-700 text-justify">
+        <strong>Verstopfungen</strong> in <strong>Rohren und Abflüssen</strong> können unerwartet auftreten und <strong>schwerwiegende
+        Beeinträchtigungen</strong> für Ihren Alltag darstellen. Es kann nicht nur sein, dass Sie die <strong>Toilette
+        oder das Waschbecken</strong> nicht mehr benutzen können, sondern das <strong>Wasser kann auch
+        austreten</strong> und einen <strong>Wasserschaden</strong> verursachen. Die <strong>Experten</strong> nutzen
+        ihre Erfahrung,
+        um <strong>Verstopfungen schnell und gründlich</strong> zu entfernen. Regelmäßige Wartung durch unsere
+        <strong>Fachleute in Ihrer Nähe</strong> kann helfen, <strong>zukünftige Probleme zu verhindern</strong>.
+      </p>
+    </div>
+
+    <!-- Emergency Service Section -->
+    <div>
+      <h3 class="text-2xl font-medium mb-4">
+        Notdienst für <span class="text-[#1B6F8F]">Rohrreinigung und Rohrbrüche</span>
+      </h3>
+      <p class="text-gray-700 text-justify">
+        Rohrbrüche und <strong>dringende Verstopfungen</strong> warten nicht auf „<strong>Bürozeiten</strong>". Unser
+        <strong>Rohreinigungs-Notdienst</strong> ist rund um die Uhr verfügbar, um bei <strong>Notfällen</strong>
+        schnell und effektiv zu <strong>reagieren</strong>. Egal ob <strong>nachts, am Wochenende oder an
+        Feiertagen</strong>, wir sind nur einen <strong>Anruf</strong> entfernt. Darum rufen Sie uns <strong>jetzt
+        schnellst möglichst</strong> an und fordern Sie den <strong>Rohrreinigung Notdienst in Ihrer Nähe</strong> an –
+        damit sind Sie auf der <strong>Sicheren Seite</strong> und können sich <strong>entspannt</strong> zurücklehnen.
+      </p>
+    </div>
+
+    <!-- Help with Blocked Drains Section -->
+    <div>
+      <h3 class="text-2xl font-medium mb-4">
+        Hilfe bei <span class="text-[#1B6F8F]">verstopftem Siphon oder Waschbecken</span>
+      </h3>
+      <p class="text-gray-700 text-justify">
+        Ein <strong>verstopfter Siphon</strong> oder ein blockiertes <strong>Waschbecken</strong> kann zu erheblichen
+        <strong>Unannehmlichkeiten</strong> und <strong>potenziellen Wasserschäden</strong> führen. Die <strong>Fachmänner
+        der Rohrreinigung</strong> sind darauf <strong>spezialisiert</strong>, solche Probleme <strong>zügig und ohne
+        große Störungen</strong> für Ihren Haushalt zu lösen. Die <strong>Experten stellen sicher</strong>,
+        dass alles wieder reibungslos <strong>funktioniert</strong> und beraten Sie gerne, <strong>wie solche
+        Probleme</strong>
+        in Zukunft vermieden werden können. Wenn Sie eine <strong>Rohrverstopfung</strong> haben und einen
+        <strong>Rohrreiniger</strong> in Ihrer Nähe benötigen, dann<strong>rufen Sie uns an</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section>
+  <div class="bg-primary flex items-center p-4 overflow-hidden">
+    <div class="rounded-lg container mx-auto px-4 bg-white max-w-[1080px] overflow-hidden">
+      <div class="swiper">
+        <div class="swiper-wrapper flex items-center">
+          <div class="swiper-slide">
+            <img
+              src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Web-Rothenberger-Gruppe-Logo-fuer-Webseite.svg"
+              alt="Image 1" class="object-contain max-w-full mx-auto">
+          </div>
+          <div class="swiper-slide ">
+            <img
+              src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Web-Bosch-Logo-fuer-Webseite.svg"
+              alt="Image 2" class="object-contain max-w-full mx-auto">
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Web-Hilti-Logo-fuer-Webseite.svg"
+              alt="Image 3" class="object-contain max-w-full mx-auto">
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Web-Kaercher-Logo-fuer-Webseite.svg"
+              alt="Image 5" class="object-contain max-w-full mx-auto">
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Web-Hilti-Logo-fuer-Webseite.svg"
+              alt="Image 6" class="object-contain max-w-full mx-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-16 blur-background">
+  <div class="max-w-[1080px] mx-auto container">
+    <h2 class="text-4xl font-bold mb-8 text-center">
+      <span class="text-gray-800">Unser</span>
+      <span class="text-primary">Kontaktformular</span>
+    </h2>
+    <div class="grid sm:grid-cols-3 gap-x-4 gap-y-2 mx-2">
+      <!-- Email Button -->
+      <a
+        class="p-4 bg-blue-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
+        href="mailto:example@example.com"
+      >
+        <img src="./images/envelop.svg" class="w-6 h-6"/>
+        E-Mail senden
+      </a>
+      <!-- WhatsApp Button -->
+      <a
+        href="https://wa.me/1234567890"
+        target="_blank"
+        class="p-4 bg-green-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
+      >
+        <img src="./images/whatsapp.svg" class="w-6 h-6"/>
+        WhatsApp senden
+      </a>
+      <!-- Call Button -->
+      <a
+        href="tel:+1234567890"
+        class="p-4 bg-primary text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
+      >
+        <img src="./images/phone.svg" class="w-6 h-6"/>
+        Anruf
+      </a>
+    </div>
+  </div>
+
+  <div class="max-w-[1080px] mx-auto bg-white rounded-md border shadow-lg p-8 mt-8">
+    <h2 class="text-4xl font-bold mb-6">
+      <span class="text-gray-800">So erreichen</span>
+      <span class="text-primary">Sie uns</span>
+    </h2>
+
+    <!-- 24/7 Service Notice -->
+    <div class="flex items-center gap-2 mb-6 text-gray-700">
+      <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+      <p class="font-medium">24 Stunden Notdienst - 365 Tage</p>
+    </div>
+
+    <!-- Business Hours -->
+    <div class="space-y-3 mb-8">
+      <div class="flex items-center gap-2">
+        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+        <div class="grid grid-cols-2 w-full">
+          <span class="font-medium">Montag:</span>
+          <span>08:00 - 19:00</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+
+        <div class="grid grid-cols-2 w-full">
+          <span class="font-medium">Dienstag:</span>
+          <span>08:00 - 19:00</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+
+        <div class="grid grid-cols-2 w-full">
+          <span class="font-medium">Mittwoch:</span>
+          <span>08:00 - 19:00</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+
+        <div class="grid grid-cols-2 w-full">
+          <span class="font-medium">Donnerstag:</span>
+          <span>08:00 - 19:00</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+
+        <div class="grid grid-cols-2 w-full">
+          <span class="font-medium">Freitag:</span>
+          <span>08:00 - 19:00</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+
+        <div class="grid grid-cols-2 w-full">
+          <span class="font-medium">Samstag:</span>
+          <span>09:00 - 15:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="space-y-4">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+        <span class="font-medium">Telefon:</span>
+        <a href="tel:01579 250 2608" class="text-blue-600 hover:text-blue-800">01579 250 2608</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        <span class="font-medium">E-Mail:</span>
+        <a href="mailto:info@rohrreinigung-thiele.de" class="text-blue-600 hover:text-blue-800">info@rohrreinigung-thiele.de</a>
+      </div>
+    </div>
+
+    <!-- Response Time Notice -->
+    <div class="mt-8 text-gray-600 space-y-2">
+      <p>Wir antworten auf Anrufe sofort. E-Mails werden bei uns innerhalb von wenigen Stunden beantwortet.</p>
+      <p class="font-medium">Wir freuen uns auf Ihre Anfrage!</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="w-full">
+  <!-- Main Footer -->
+  <div class="bg-primary py-4">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+        <!-- Column 1 -->
+        <div class="text-center">
+          <nav class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-gray-200">Startseite</a>
+            <a href="#" class="hover:text-gray-200">Über Uns</a>
+            <a href="#" class="hover:text-gray-200">Leistungen</a>
+            <a href="#" class="hover:text-gray-200">Einsatzgebiete</a>
+            <a href="#" class="hover:text-gray-200">Kontakt</a>
+          </nav>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="text-center">
+          <h3 class="font-medium mb-2">Unsere Leistungen</h3>
+          <nav class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-gray-200">Rohrreinigung Service</a>
+            <a href="#" class="hover:text-gray-200">Rohrreinigung Notdienst</a>
+            <a href="#" class="hover:text-gray-200">Abflussreinigung Notdienst</a>
+            <a href="#" class="hover:text-gray-200">Rohrbruch Notdienst</a>
+          </nav>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="text-center">
+          <nav class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-gray-200">Kanalreinigung</a>
+            <a href="#" class="hover:text-gray-200">Hochdruckreinigung</a>
+            <a href="#" class="hover:text-gray-200">Toilette Verstopft</a>
+            <a href="#" class="hover:text-gray-200">Siphon Verstopft</a>
+            <a href="#" class="hover:text-gray-200">Badewanne Verstopft</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-gray-800 py-4">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-x-8 items-center text-white text-base">
+        <div class="mb-4 md:mb-0">
+          © 2025 Rohrreinigung Thiele Alle Rechte vorbehalten
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-gray-300">Impressum</a>
+          <a href="#" class="hover:text-gray-300">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 bg-gray-900/50 hidden" aria-hidden="true">
+  <div class="fixed inset-y-0 right-0 w-64 bg-white p-6 shadow-xl">
+    <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleMobileMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <nav class="mt-8">
+      <div class="flex flex-col space-y-4">
+        <a href="#" class="text-gray-700 hover:text-primary">Startseite</a>
+        <a href="#" class="text-gray-700 hover:text-primary">Über Uns</a>
+        <a href="#" class="text-gray-700 hover:text-primary">Leistungen</a>
+        <a href="#" class="text-gray-700 hover:text-primary">Einsatzgebiete</a>
+        <a href="#" class="text-gray-700 hover:text-primary">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module">
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+      loop: true, // Tự động lặp lại
+      autoplay: {
+        delay: 3000, // Tự động chuyển slide mỗi 3 giây
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        '480': {
+          slidesPerView: 1,
+          spaceBetween: 40,},
+        '640': {
+          slidesPerView: 2,
+          spaceBetween: 50, },
+        '768': {
+          slidesPerView: 3,
+          spaceBetween: 50, },
+        '1080': {
+          slidesPerView: 4,
+          spaceBetween: 50, },
+      },
+    });
+  });
+</script>
+
+<script>
+  // Add mobile menu functionality here if needed
+  const mobileMenuButton = document.querySelector('[data-mobile-menu]');
+  const mobileMenu = document.querySelector('[data-menu]');
+
+  // Menu mobile
+  function toggleMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('hidden');  // Chuyển đổi trạng thái ẩn/hiện của menu
+  }
+
+
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Mobile Menu Toggle
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  }
+
+  // Form Submission
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Add your form submission logic here
+    alert('Vielen Dank für Ihre Nachricht. Wir werden uns schnellstmöglich bei Ihnen melden.');
+  });
+</script>
+</body>
+</html>

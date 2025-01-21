@@ -1,0 +1,9 @@
+.blur-background {
+    background-image: url('https://img.freepik.com/free-photo/portrait-male-engineer-working-field-engineers-day-celebration_23-2151615076.jpg?semt=ais_incoming');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: overlay;
+    color: black;
+}
