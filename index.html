@@ -11,44 +11,62 @@
   />
   <link href="output.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Rohrreinigung David",
+      "image": "./images/logo.png",
+      "telephone": "0123456789",
+      "email": "info@rohrreinigung-david.de",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "[Ihre Stadt]",
+        "addressCountry": "DE"
+      }
+    }
+  </script>
 </head>
 <body>
-<!-- Top Bar -->
 <div>
-  <div class="bg-primary text-white py-2 flex justify-center items-center sticky top-0 -z-10">
-    <div
-      class="container max-w-[1080px] text-sm flex flex-wrap justify-center gap-x-4 gap-y-0.5 lg:justify-between items-center py-1">
+  <!-- Top Bar -->
+  <header class="bg-primary text-white py-2 flex justify-center items-center sticky top-0 -z-10">
+    <div class="container max-w-[1080px] text-sm flex flex-wrap justify-center gap-x-4 gap-y-0.5 lg:justify-between items-center py-1">
       <div class="flex items-center gap-x-1.5">
-        <img src="./images/user.svg" class="w-4 h-4"/>
+        <img src="./images/user.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
         <span>Rohrreinigung seit 2019</span>
       </div>
       <div class="flex items-center gap-x-1.5">
-        <img src="./images/clock.svg" class="w-4 h-4"/>
+        <img src="./images/clock.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
         <span>Wir sind jeden Tag für Sie da 24/7</span>
       </div>
       <div class="flex items-center gap-x-1.5">
-        <img src="./images/phone.svg" class="w-4 h-4"/>
-        <a href="tel:0123456789">0123456789</a>
+        <img src="./images/phone.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
+        <a href="tel:0123456789" aria-label="Rufen Sie uns an unter 0123456789">0123456789</a>
       </div>
       <div class="flex items-center gap-x-1.5">
-        <img src="./images/envelop.svg" class="w-4 h-4"/>
-        <a href="mailto:info@rohrreinigung-thiele.de">info@rohrreinigung-thiele.de</a>
+        <img src="./images/envelop.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
+        <a href="mailto:info@rohrreinigung-thiele.de" aria-label="Schreiben Sie uns eine E-Mail">info@rohrreinigung-thiele.de</a>
       </div>
       <div class="flex items-center gap-x-1.5">
-        <img src="./images/car.svg" class="w-4 h-4"/>
+        <img src="./images/car.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
         <span>Schnell vor Ort</span>
       </div>
     </div>
-  </div>
+  </header>
 
   <!-- Navigation -->
-  <nav class="bg-white border-b-2 border-b-black sticky top-0 inset-x-0 z-50">
+  <nav class="bg-white border-b-2 border-b-black sticky top-0 inset-x-0 z-50" aria-label="Hauptnavigation">
     <div class="container max-w-[1080px] mx-auto py-3">
       <div class="flex justify-between items-center">
         <a href="/" class="w-48">
-          <img width="525" height="150"
-               src="./images/logo.png"
-               class="attachment-full size-full wp-image-114" alt="Rohrreinigung David Logo Webseite">
+          <img
+            src="./images/logo.png"
+            class="attachment-full size-full wp-image-114"
+            alt="Rohrreinigung David Logo"
+            width="192"
+            height="96"
+          >
         </a>
 
         <!-- Desktop menu-->
@@ -71,41 +89,51 @@
           <a
             href="tel:+1234567890"
             class="p-3 bg-primary text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
+            aria-label="Rufen Sie uns an"
           >
-            <img src="./images/phone.svg" class="w-4 h-4"/>
+            <img src="./images/phone.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
             <span class="text-sm">Anruf</span>
           </a>
           <a
             href="https://wa.me/1234567890"
             target="_blank"
+            rel="noopener noreferrer"
             class="p-3 bg-green-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
+            aria-label="Kontaktieren Sie uns über WhatsApp"
           >
-            <img src="./images/whatsapp.svg" class="w-4 h-4"/>
+            <img src="./images/whatsapp.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
             <span class="text-sm">WhatsApp</span>
           </a>
         </div>
-        <div>
+        <button
+          aria-label="Menü öffnen"
+          class="sm:hidden"
+          onclick="toggleMenu()"
+        >
           <img src="./images/bar.svg"
-               alt="Rohrreiniger Service"
+               alt=""
                class="size-10 bg-primary p-1 rounded-md sm:hidden mx-4"
-               onclick="toggleMenu()"/>
-        </div>
+               aria-hidden="true"
+          />
+        </button>
       </div>
     </div>
 
     <!-- Mobile menu -->
     <div id="mobileMenu" class="sm:hidden bg-white shadow-lg hidden">
-      <a href="#"
-         class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Startseite</a>
-      <a href="#"
-         class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Über
-        Uns</a>
-      <a href="#"
-         class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Leistungen</a>
-      <a href="#"
-         class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Einsatzgebiete</a>
-      <a href="#"
-         class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Kontakt</a>
+      <nav aria-label="Mobile Menü">
+        <a href="#"
+           class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Startseite</a>
+        <a href="#"
+           class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Über
+          Uns</a>
+        <a href="#"
+           class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Leistungen</a>
+        <a href="#"
+           class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Einsatzgebiete</a>
+        <a href="#"
+           class="block text-gray-700 font-semibold text-lg border-b-2 border-transparent hover:text-primary transition text-center py-2">Kontakt</a>
+      </nav>
     </div>
   </nav>
 
@@ -148,7 +176,7 @@
                 href="tel:+1234567890"
                 class="w-full p-4 bg-primary text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
               >
-                <img src="./images/phone.svg" class="w-6 h-6"/>
+                <img src="./images/phone.svg" class="w-6 h-6" alt="phone"/>
                 <span class="text-xs">Anruf</span>
               </a>
               <a
@@ -156,7 +184,7 @@
                 target="_blank"
                 class="w-full p-4 bg-green-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
               >
-                <img src="./images/whatsapp.svg" class="w-6 h-6"/>
+                <img src="./images/whatsapp.svg" class="w-6 h-6" alt="whatsapp"/>
                 <span class="text-xs">WhatsApp</span>
               </a>
             </div>
@@ -176,15 +204,15 @@
       <div class="container mx-auto px-4 max-w-[1080px]">
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="flex items-center space-x-3">
-            <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg"/>
+            <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg" alt="check"/>
             <span class="text-xl">Geprüfte Rohrreiniger</span>
           </div>
           <div class="flex items-center space-x-3">
-            <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg"/>
+            <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg" alt="check"/>
             <span class="text-xl">Termine am gleichen Tag</span>
           </div>
           <div class="flex items-center space-x-3">
-            <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg"/>
+            <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg" alt="check"/>
             <span class="text-xl">Jede Verstopfung wird gelöst</span>
           </div>
         </div>
@@ -456,7 +484,7 @@
             href="tel:+1234567890"
             class="w-full sm:max-w-48 p-3 bg-primary border-2 border-white text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           >
-            <img src="./images/phone.svg" class="w-6 h-6 "/>
+            <img src="./images/phone.svg" class="w-6 h-6 " alt="phone"/>
             <span class="text-xs ">Anruf</span>
           </a>
           <a
@@ -464,7 +492,7 @@
             target="_blank"
             class="w-full sm:max-w-48 p-3 bg-green-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           >
-            <img src="./images/whatsapp.svg" class="w-6 h-6"/>
+            <img src="./images/whatsapp.svg" class="w-6 h-6" alt="whatsapp"/>
             <span class="text-xs">WhatsApp</span>
           </a>
         </div>
@@ -750,9 +778,9 @@
             <div class="tab-content hidden p-6" id="cleaning">
               <div class="text-gray-700 space-y-2">
 
-               <p> - Rohrverlaufsortung</p>
+                <p> - Rohrverlaufsortung</p>
 
-               <p> - TV Kamerainspektion</p>
+                <p> - TV Kamerainspektion</p>
 
                 <p>- Hochdruckspülung</p>
 
@@ -778,7 +806,7 @@
             href="tel:+1234567890"
             class="w-full sm:max-w-48 p-3 bg-primary border-2 border-white text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           >
-            <img src="./images/phone.svg" class="w-6 h-6 "/>
+            <img src="./images/phone.svg" class="w-6 h-6 " alt="phone"/>
             <span class="text-xs ">Anruf</span>
           </a>
           <a
@@ -786,7 +814,7 @@
             target="_blank"
             class="w-full sm:max-w-48 p-3 bg-green-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           >
-            <img src="./images/whatsapp.svg" class="w-6 h-6"/>
+            <img src="./images/whatsapp.svg" class="w-6 h-6" alt="whatsapp"/>
             <span class="text-xs">WhatsApp</span>
           </a>
         </div>
@@ -1054,7 +1082,7 @@
           class="p-4 bg-blue-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           href="mailto:example@example.com"
         >
-          <img src="./images/envelop.svg" class="w-6 h-6"/>
+          <img src="./images/envelop.svg" class="w-6 h-6" alt="envelop"/>
           E-Mail senden
         </a>
         <!-- WhatsApp Button -->
@@ -1063,7 +1091,7 @@
           target="_blank"
           class="p-4 bg-green-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
         >
-          <img src="./images/whatsapp.svg" class="w-6 h-6"/>
+          <img src="./images/whatsapp.svg" class="w-6 h-6" alt="whatsapp"/>
           WhatsApp senden
         </a>
         <!-- Call Button -->
@@ -1071,7 +1099,7 @@
           href="tel:+1234567890"
           class="p-4 bg-primary text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
         >
-          <img src="./images/phone.svg" class="w-6 h-6"/>
+          <img src="./images/phone.svg" class="w-6 h-6" alt="phone"/>
           Anruf
         </a>
       </div>
@@ -1085,21 +1113,21 @@
 
       <!-- 24/7 Service Notice -->
       <div class="flex items-center gap-2 mb-6 text-gray-700">
-        <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+        <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
         <p class="font-medium">24 Stunden Notdienst - 365 Tage</p>
       </div>
 
       <!-- Business Hours -->
       <div class="space-y-3 mb-8">
         <div class="flex items-center gap-2">
-          <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+          <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
           <div class="grid grid-cols-2 w-full">
             <span class="font-medium">Montag:</span>
             <span>08:00 - 19:00</span>
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+          <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
 
           <div class="grid grid-cols-2 w-full">
             <span class="font-medium">Dienstag:</span>
@@ -1107,7 +1135,7 @@
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+          <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
 
           <div class="grid grid-cols-2 w-full">
             <span class="font-medium">Mittwoch:</span>
@@ -1115,7 +1143,7 @@
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+          <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
 
           <div class="grid grid-cols-2 w-full">
             <span class="font-medium">Donnerstag:</span>
@@ -1123,7 +1151,7 @@
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+          <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
 
           <div class="grid grid-cols-2 w-full">
             <span class="font-medium">Freitag:</span>
@@ -1131,7 +1159,7 @@
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <img src="./images/outline-clock.svg" class="w-6 h-6"/>
+          <img src="./images/outline-clock.svg" class="w-6 h-6" alt="outline clock"/>
 
           <div class="grid grid-cols-2 w-full">
             <span class="font-medium">Samstag:</span>
@@ -1234,14 +1262,14 @@
       href="tel:+1234567890"
       class=" p-4 bg-primary border-2 border-white text-white rounded-full mb-2 font-medium text-center flex items-center justify-center gap-x-2"
     >
-      <img src="./images/phone.svg" class="w-6 h-6 "/>
+      <img src="./images/phone.svg" class="w-6 h-6 " alt="phone"/>
     </a>
     <a
       href="https://wa.me/1234567890"
       target="_blank"
       class=" p-4 bg-green-500 text-white rounded-full font-medium text-center flex items-center justify-center gap-x-2"
     >
-      <img src="./images/whatsapp.svg" class="w-6 h-6"/>
+      <img src="./images/whatsapp.svg" class="w-6 h-6" alt="whatsapp"/>
     </a>
   </div>
 
@@ -1269,7 +1297,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="module">
   document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
+     new Swiper('.swiper', {
       loop: true, // Tự động lặp lại
       autoplay: {
         delay: 3000, // Tự động chuyển slide mỗi 3 giây
