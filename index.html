@@ -31,22 +31,10 @@
 <div>
   <!-- Top Bar -->
   <header class="bg-primary text-white py-2 flex justify-center items-center sticky top-0 -z-10">
-    <div class="container max-w-[1080px] text-sm flex flex-wrap justify-center gap-x-4 gap-y-0.5 lg:justify-between items-center py-1">
-      <div class="flex items-center gap-x-1.5">
-        <img src="./images/user.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
-        <span>Rohrreinigung seit 2019</span>
-      </div>
+    <div class="container max-w-[1280px] text-sm flex flex-wrap justify-center gap-x-4 gap-y-0.5 items-center py-1">
       <div class="flex items-center gap-x-1.5">
         <img src="./images/clock.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
         <span>Wir sind jeden Tag für Sie da 24/7</span>
-      </div>
-      <div class="flex items-center gap-x-1.5">
-        <img src="./images/phone.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
-        <a href="tel:0123456789" aria-label="Rufen Sie uns an unter 0123456789">0123456789</a>
-      </div>
-      <div class="flex items-center gap-x-1.5">
-        <img src="./images/envelop.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
-        <a href="mailto:info@rohrreinigung-thiele.de" aria-label="Schreiben Sie uns eine E-Mail">info@rohrreinigung-thiele.de</a>
       </div>
       <div class="flex items-center gap-x-1.5">
         <img src="./images/car.svg" class="w-4 h-4" alt="" aria-hidden="true"/>
@@ -57,7 +45,7 @@
 
   <!-- Navigation -->
   <nav class="bg-white border-b-2 border-b-black sticky top-0 inset-x-0 z-50" aria-label="Hauptnavigation">
-    <div class="container max-w-[1080px] mx-auto py-3">
+    <div class="container max-w-[1280px] mx-auto py-3">
       <div class="flex justify-between items-center">
         <a href="/" class="w-48">
           <img
@@ -87,7 +75,7 @@
         <div class="gap-x-2 hidden lg:flex">
           <!-- Call Button -->
           <a
-            href="tel:+1234567890"
+            href="tel:015739732385"
             class="p-3 bg-primary text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
             aria-label="Rufen Sie uns an"
           >
@@ -139,17 +127,30 @@
 
   <div id="home">
     <!-- Hero Section -->
-    <section id="homepage" class="relative bg-gray-100 py-12 blur-background">
-      <div class="container max-w-[1080px] mx-auto px-4">
+    <section id="homepage" class="relative bg-gray-100 py-24 blur-background">
+      <div class="container max-w-[1280px] mx-auto px-4 ">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Hero header-->
-          <div>
-            <p class="text-primary mb-2 font-bold">Professionelle Rohrreinigung zu Festpreisen</p>
+          <div class="">
+            <p class="text-primary mb-2 font-bold">Kostenlose Anfahrt, Abfahrt & Vor-Ort-Inspektionn</p>
             <h1 class="text-4xl font-bold mb-6">
-              Rohrreinigung <span class="text-primary">David</span>
+              Professionelle Rohrreinigung zu <span class="text-primary">Festpreisen</span>
             </h1>
 
             <!-- Hero content-->
+            <div class="space-y-4 mb-8 text-lg lg:text-xl font-medium text-gray-600">
+              <p>
+                Verstopfte Küche/ Badewanne/ Waschbecken/ Urinal <span
+                class="text-primary font-semibold">188 €</span>
+              </p>
+              <p>
+                Verstopfte Toilette <span class="text-primary font-semibold">288 €</span>
+              </p>
+              <p>
+                Verstopftes Kanalsystem <span class="text-primary font-semibold">388 €</span>
+              </p>
+            </div>
+
             <div class="space-y-4 mb-8">
               <p class="text-gray-600">
                 Sie suchen einen <strong>Rohrreiniger</strong> auf den Sie sich immer verlassen können?
@@ -169,11 +170,18 @@
                 uns am besten noch heute!
               </p>
             </div>
+          </div>
 
-            <div class="flex flex-col sm:flex-row gap-x-2 gap-y-4 justify-around">
+          <div class="h-full w-full">
+            <img
+              src="./images/hero.jpg"
+              alt="Rohrreiniger Service"
+              class="rounded-lg shadow-xl mx-auto"
+            />
+            <div class="flex flex-col sm:flex-row gap-x-2 gap-y-4 justify-around mt-4 lg:mt-8">
               <!-- Call Button -->
               <a
-                href="tel:+1234567890"
+                href="tel:015739732385"
                 class="w-full p-4 bg-primary text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
               >
                 <img src="./images/phone.svg" class="w-6 h-6" alt="phone"/>
@@ -189,19 +197,13 @@
               </a>
             </div>
           </div>
-          <div class="h-full w-full">
-            <img
-              src="https://freelancervietnam.vn/wp-content/uploads/2020/11/post-thumb-dich-vu-sua-chua.jpg"
-              alt="Rohrreiniger Service"
-              class="rounded-lg shadow-xl">
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Features Section -->
     <section class="bg-primary text-white py-5">
-      <div class="container mx-auto px-4 max-w-[1080px]">
+      <div class="container mx-auto px-4 max-w-[1280px]">
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="flex items-center space-x-3">
             <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg" alt="check"/>
@@ -209,24 +211,24 @@
           </div>
           <div class="flex items-center space-x-3">
             <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg" alt="check"/>
-            <span class="text-xl">Termine am gleichen Tag</span>
+            <span class="text-xl">Kostenlose Anfahrt, Abfahrt & Vor-Ort-Inspektion</span>
           </div>
           <div class="flex items-center space-x-3">
             <img class="w-8 h-8 border-2 rounded-sm" src="./images/check.svg" alt="check"/>
-            <span class="text-xl">Jede Verstopfung wird gelöst</span>
+            <span class="text-xl">Festpreisen</span>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about-us" class="blur-background">
-      <div class="container mx-auto max-w-[1080px] py-6">
+      <div class="container mx-auto max-w-[1280px] py-6">
         <!-- Top Section -->
         <div class="flex flex-col-reverse md:flex-row">
           <!-- Left Image -->
           <div class="w-full flex justify-center items-center md:basis-1/2">
             <img
-              src="https://images.ctfassets.net/vwt5n1ljn95x/2vw8Ct7BWBT12032WBzVyf/4c378cd3d80bcfb6751f8f5f3c804a5a/Plumbing_Help.jpeg?w=3840&q=75&fm=webp"
+              src="./images/1.jpg"
               alt="Rohrreiniger bei der Arbeit"
               class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
             >
@@ -239,19 +241,22 @@
             </h2>
 
             <p class="font-extralight">
-              Als Rohrreinigungsservicesind wir seit 2019 tätig und helfen immer schnell weiter. Die arbeiten sind
+              Als Rohrreinigungsservicesind wir seit 2008 tätig und helfen immer schnell weiter. Die
+              arbeiten sind
               routiniert,
               professionell und stehts zuverlässig für gewerbliche und private Auftraggeber.
             </p>
 
             <p class="font-extralight">
-              Die Fachmänner führen immer alles an notwendigem Werkzeug mit sich um Ihnen jeder Zeit bei jeglichen
+              Die Fachmänner führen immer alles an notwendigem Werkzeug mit sich um Ihnen jeder Zeit bei
+              jeglichen
               Anliegen
               schnell und ohne Verzögerung weiter helfen zu können.
             </p>
 
             <p class="font-extralight">
-              Wir beraten Sie gerne persönlich am Telefon und direkt bei Ihnen vor Ort, um zu besprechen, welche
+              Wir beraten Sie gerne persönlich am Telefon und direkt bei Ihnen vor Ort, um zu besprechen,
+              welche
               Leistungen
               genau benötigt werden. Kontaktieren Sie uns für ein Kennenlerngesprach.
             </p>
@@ -273,13 +278,15 @@
             </p>
 
             <p class="font-extralight">
-              Zudem bieten wir einen rund um die Uhr verfügbaren Rohrreinigung Notdienst an, der innerhalb von 20
+              Zudem bieten wir einen rund um die Uhr verfügbaren Rohrreinigung Notdienst an, der innerhalb
+              von 20
               bis 40
               Minuten vor Ort ist und umgehend alle Probleme löst.
             </p>
 
             <p class="font-extralight">
-              Keine Sorge, auch wenn Ihre Rohrleitungen in den Wänden verborgen sind und nicht direkt sichtbar –
+              Keine Sorge, auch wenn Ihre Rohrleitungen in den Wänden verborgen sind und nicht direkt
+              sichtbar –
               unsere
               Experten beseitigen jede Verstopfung sicher und dauerhaft.
             </p>
@@ -289,7 +296,7 @@
           <!-- Right Image -->
           <div class="w-full flex justify-center items-center md:basis-1/2">
             <img
-              src="https://rohrreinigung-thiele.de/wp-content/uploads/2024/05/Rohrreinigung-Thiele-Verstopfte-Toiletten-werden-schnell-wieder-befreit-1024x682.webp"
+              src="./images/4.jpg"
               alt="Toilette und Badezimmer"
               class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
             >
@@ -299,7 +306,7 @@
     </section>
 
     <section class="py-16 bg-primary">
-      <div class="container mx-auto px-4 max-w-[1080px]">
+      <div class="container mx-auto px-4 max-w-[1280px]">
         <h2 class="text-4xl text-white font-semibold text-center mb-8">So funktioniert der Ablauf</h2>
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Service Card 1 -->
@@ -309,7 +316,8 @@
               1
             </div>
             <h3 class="text-xl font-semibold mb-3">Kontaktieren Sie uns</h3>
-            <p class="text-gray-600">Rufen Sie uns einfach an oder senden Sie uns bequem eine Anfrage über unser
+            <p class="text-gray-600">Rufen Sie uns einfach an oder senden Sie uns bequem eine Anfrage über
+              unser
               Formular
               und wir werden uns mit Ihnen in Kontakt setzten.</p>
           </div>
@@ -321,7 +329,8 @@
               2
             </div>
             <h3 class="text-xl font-semibold mb-3">Der Monteur kommt vorbei</h3>
-            <p class="text-gray-600">Wenn wir mit Ihnen besprochen haben was bei Ihnen erledigt werden soll, kommt
+            <p class="text-gray-600">Wenn wir mit Ihnen besprochen haben was bei Ihnen erledigt werden soll,
+              kommt
               der
               Fachmann zu Ihnen und macht sich einen Vorort Eindruck.</p>
           </div>
@@ -333,7 +342,8 @@
               3
             </div>
             <h3 class="text-xl font-semibold mb-3">Schnelle Durchführung</h3>
-            <p class="text-gray-600">Nachdem alles geklärt wurde, fangen die Fachmänner mit der Arbeit an und führen
+            <p class="text-gray-600">Nachdem alles geklärt wurde, fangen die Fachmänner mit der Arbeit an
+              und führen
               diese
               nach Ihren wünschen schnell und sauber durch. Schnelle Durchführung</p>
           </div>
@@ -342,7 +352,7 @@
     </section>
 
     <section id="service" class="py-16 blur-background">
-      <div class="container mx-auto px-4 max-w-[1080px]">
+      <div class="container mx-auto px-4 max-w-[1280px]">
         <!-- Section Title -->
         <h2 class="text-center text-4xl font-bold mt-4 mb-16">
           Unsere <span class="text-[#1B6F8F]">Leistungen</span>
@@ -357,7 +367,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Professionelle Monteure</h3>
             <p class="text-gray-600 leading-relaxed">
-              Die Fachmänner haben jahrelange Erfahrung im Bereich der Rohr- und Abflussreinigung und können Ihnen
+              Die Fachmänner haben jahrelange Erfahrung im Bereich der Rohr- und Abflussreinigung und
+              können Ihnen
               zu jeder
               Zeit bei einer Rohrverstopfung helfen.
             </p>
@@ -372,7 +383,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Toilette Verstopft</h3>
             <p class="text-gray-600 leading-relaxed">
-              Verstopfte Toiletten können auftreten und Ihnen den Freitag vermiesen. Das muss nicht sein, wir sind
+              Verstopfte Toiletten können auftreten und Ihnen den Freitag vermiesen. Das muss nicht sein,
+              wir sind
               noch am
               gleichen Tag da und lösen die Verstopfung für Sie.
             </p>
@@ -385,7 +397,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Waschbecken Verstopft</h3>
             <p class="text-gray-600 leading-relaxed">
-              Ein verstopftes Waschbecken in der Küche entsteht meistens mit Rückständen von Öl und Essensresten.
+              Ein verstopftes Waschbecken in der Küche entsteht meistens mit Rückständen von Öl und
+              Essensresten.
               Wir
               befreien diese für Sie. Rufen Sie uns einfach an.
             </p>
@@ -398,7 +411,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Rohrreinigung</h3>
             <p class="text-gray-600 leading-relaxed">
-              Die Rohrreinigung gehört zu den Tagesaufgaben der Fachmänner und wird immer leidenschaftlich und
+              Die Rohrreinigung gehört zu den Tagesaufgaben der Fachmänner und wird immer leidenschaftlich
+              und
               professionell
               ausgeführt. Keine Verstopfung ist sicher!
             </p>
@@ -411,7 +425,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Badewanne Verstopft</h3>
             <p class="text-gray-600 leading-relaxed">
-              Harre, die falschen Reinigungsmittel oder sogar Kalkrückstände können dafür sorgen, dass das Wasser
+              Harre, die falschen Reinigungsmittel oder sogar Kalkrückstände können dafür sorgen, dass das
+              Wasser
               langsam
               oder überhaupt nicht abfließt. Wir helfen schnell weiter!
             </p>
@@ -424,7 +439,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Rohrreinigung Notdienst 24h</h3>
             <p class="text-gray-600 leading-relaxed">
-              Im Fall der Fälle hilft Ihnen der 24h Rohrreinigung Notdienst von David weiter! Wir sind rund um
+              Im Fall der Fälle hilft Ihnen der 24h Rohrreinigung Notdienst von David weiter! Wir sind
+              rund um
               die Uhr
               erreichbar und der Monteur in 20 - 40 Minuten bei Ihnen!
             </p>
@@ -437,7 +453,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Abflussreinigung</h3>
             <p class="text-gray-600 leading-relaxed">
-              Ein verstopfter Abfluss kann verschiedene Ursachen haben. Die Reinigung ist in den meisten Fällen
+              Ein verstopfter Abfluss kann verschiedene Ursachen haben. Die Reinigung ist in den meisten
+              Fällen
               einfach und
               verläuft schnell, kann aber auch knifflig werden.
             </p>
@@ -450,7 +467,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Siphon Verstopft</h3>
             <p class="text-gray-600 leading-relaxed">
-              Ein verstopftes Siphon im Badezimmer können wir ganz schnell für Sie befreien. Manchmal sitzt die
+              Ein verstopftes Siphon im Badezimmer können wir ganz schnell für Sie befreien. Manchmal
+              sitzt die
               Verstopfung
               aber auch tiefer. Auch das ist kein Problem für uns.
             </p>
@@ -463,7 +481,8 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Rohrbruch Notdienst</h3>
             <p class="text-gray-600 leading-relaxed">
-              Ein Rohrbruch kann durch eine vernünftige Rohrreinigung vermieden werden. Aber wenn es dann doch
+              Ein Rohrbruch kann durch eine vernünftige Rohrreinigung vermieden werden. Aber wenn es dann
+              doch
               brechen
               sollte sind wir schnell bei Ihnen. Rufen Sie uns jetzt an!
             </p>
@@ -474,14 +493,14 @@
 
     <section class="bg-primary">
       <div
-        class="container mx-auto px-4 max-w-[1080px] flex flex-col sm:flex-row justify-center gap-y-4 md:justify-between items-center py-6">
+        class="container mx-auto px-4 max-w-[1280px] flex flex-col sm:flex-row justify-center gap-y-4 md:justify-between items-center py-6">
         <div class="w-full text-white font-semibold text-2xl">
           Überzeugt - Dann rufen Sie uns jetzt an
         </div>
         <div class="flex flex-col sm:flex-row w-full justify-end gap-4">
           <!-- Call Button -->
           <a
-            href="tel:+1234567890"
+            href="tel:015739732385"
             class="w-full sm:max-w-48 p-3 bg-primary border-2 border-white text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           >
             <img src="./images/phone.svg" class="w-6 h-6 " alt="phone"/>
@@ -500,13 +519,13 @@
     </section>
 
     <section>
-      <div class="container mx-auto max-w-[1080px] my-6">
+      <div class="container mx-auto max-w-[1280px] my-6">
         <!-- Top Section -->
         <div class="flex flex-col-reverse md:flex-row">
           <!-- Left Image -->
           <div class="w-full flex justify-center items-center md:basis-1/2">
             <img
-              src="https://mjtechh.com/assets/img/plumber/Plumbing.jpg"
+              src="./images/3.jpg"
               alt="Rohrreiniger bei der Arbeit"
               class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
             >
@@ -515,25 +534,28 @@
           <!-- Right Content -->
           <div class="text-gray-900 p-8 space-y-3 md:basis-1/2 rounded-md">
             <h2 class="text-2xl font-semibold">
-              Seit 2019 - Rohrreinigung in <span class="text-primary">Ihrer Nähe</span>
+              Seit 2008 - Rohrreinigung in <span class="text-primary">Ihrer Nähe</span>
             </h2>
 
             <p>
-              Im Laufe der Jahre hat der <strong>Rohrreinigung Service David</strong> eine breite Palette an
+              Im Laufe der Jahre hat der <strong>Rohrreinigung Service David</strong> eine breite Palette
+              an
               Verstopfungen
               behoben und jedes
               Anliegen gemeistert. Die Fachmänner erledigen alles schnell und effizient.
             </p>
 
             <p>
-              Von der <strong>Beseitigung von Verstopfungen in Abflüssen</strong> über das Reparieren kleiner
+              Von der <strong>Beseitigung von Verstopfungen in Abflüssen</strong> über das Reparieren
+              kleiner
               Anschlüsse bis
               hin zur Lösung von
               schweren Verstopfungen in Toiletten, sind wir ihr erfahrener Partner!
             </p>
 
             <p>
-              Profitieren Sie von der schnellen und problemlosen Abwicklung durch die Profis. <strong>Rufen Sie
+              Profitieren Sie von der schnellen und problemlosen Abwicklung durch die Profis. <strong>Rufen
+              Sie
               uns jetzt
               einfach an und lassen</strong> Sie keine offene Frage mehr im Raum stehen. Wir helfen gerne!
             </p>
@@ -549,21 +571,24 @@
             </h2>
 
             <p>
-              Es ist 22 Uhr, Sie bemerken Wasser auf dem <strong>Boden in Ihrem Café</strong> oder während Sie
+              Es ist 22 Uhr, Sie bemerken Wasser auf dem <strong>Boden in Ihrem Café</strong> oder während
+              Sie
               fernsehen. Ist
               es ein Rohrbruch
               oder eine Verstopfung?
             </p>
 
             <p>
-              Schnelle Hilfe ist gefragt. <strong>Entdecken Sie den Rohrreinigung Service David</strong> in Ihrer
+              Schnelle Hilfe ist gefragt. <strong>Entdecken Sie den Rohrreinigung Service David</strong>
+              in Ihrer
               Nähe –
               zuverlässig und immer
               bereit um Ihnen weiter zu helfen!
             </p>
 
             <p>
-              Rufen Sie uns an, schildern Sie das Problem, und <strong>unsere Fachmänner</strong> sind umgehend
+              Rufen Sie uns an, schildern Sie das Problem, und <strong>unsere Fachmänner</strong> sind
+              umgehend
               mit allem
               Notwendigen bei
               Ihnen. Wir sind rund um die Uhr für Sie da!
@@ -573,7 +598,7 @@
           <!-- Right Image -->
           <div class="w-full flex justify-center items-center md:basis-1/2">
             <img
-              src="https://www.absoluteairflow.com/wp-content/uploads/2024/03/shutterstock_236821144.jpg"
+              src="./images/2.jpg"
               alt="Toilette und Badezimmer"
               class=" object-cover rounded-lg m-4 max-w-[95%] md:max-w-96 md:w-[80%] max-h-[90%]"
             >
@@ -584,15 +609,17 @@
 
     <section class="py-8">
       <div class="container mx-auto">
-        <div class="mx-auto max-w-[1080px] px-4">
+        <div class="mx-auto max-w-[1280px] px-4">
           <h2 class="text-4xl font-bold mb-12 text-center">Unser effizienter <span
             class="text-primary">Rohrreinigung Service</span></h2>
           <div class="flex flex-col md:flex-row md:justify-between gap-8 w-full">
             <div class="space-y-4 basis-2/3">
               <p>
-                Unser <strong>Netzwerk</strong> ist deutschlandweit vertreten, und wir bieten Ihnen als <strong>Rohrreinigung
-                David</strong> erstklassigen
-                Service. Unabhängig davon, ob <strong>Sie gewerblicher oder privater Kunde sind</strong>, unsere
+                Unser <strong>Netzwerk</strong> ist deutschlandweit vertreten, und wir bieten Ihnen als
+                <strong>Rohrreinigung
+                  David</strong> erstklassigen
+                Service. Unabhängig davon, ob <strong>Sie gewerblicher oder privater Kunde sind</strong>,
+                unsere
                 Experten
                 geben stets ihr
                 Bestes für Sie auch im Notdienst!
@@ -601,7 +628,8 @@
                 <strong>Kontaktieren Sie uns noch heute</strong> und sichern Sie sich professionelle
                 Unterstützung durch
                 Rohrreinigung
-                David. Abflussreinigung von Experten! <strong>Wir sind rund um die Uhr für Sie</strong> da und
+                David. Abflussreinigung von Experten! <strong>Wir sind rund um die Uhr für Sie</strong>
+                da und
                 beheben Ihre
                 Rohrverstopfungen schnell und effizient.
               </p>
@@ -616,7 +644,7 @@
 
 
     <section id="area" class="py-16 bg-white">
-      <div class="container mx-auto max-w-[1080px]">
+      <div class="container mx-auto max-w-[1280px]">
         <!-- Section Title -->
         <h2 class="text-center text-4xl font-bold mb-12">
           Unsere <span class="text-[#1B6F8F]">Einsatzgebiete</span>
@@ -742,7 +770,7 @@
     </section>
 
     <section class="mb-8">
-      <div class="max-w-[1080px] mx-auto px-4 py-8">
+      <div class="max-w-[1280px] mx-auto px-4 py-8">
         <div class="space-y-2">
           <h2 class=" font-bold text-center mb-8 text-4xl">
             Dienstleistungs-Preisliste
@@ -796,14 +824,14 @@
 
     <section class="bg-primary">
       <div
-        class=" container mx-auto px-4 max-w-[1080px] flex flex-col sm:flex-row justify-center gap-y-4 md:justify-between items-center py-6">
+        class=" container mx-auto px-4 max-w-[1280px] flex flex-col sm:flex-row justify-center gap-y-4 md:justify-between items-center py-6">
         <div class="w-full text-white font-semibold text-2xl">
           Überzeugt - Dann rufen Sie uns jetzt an
         </div>
         <div class="flex flex-col sm:flex-row w-full justify-end gap-4">
           <!-- Call Button -->
           <a
-            href="tel:+1234567890"
+            href="tel:015739732385"
             class="w-full sm:max-w-48 p-3 bg-primary border-2 border-white text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
           >
             <img src="./images/phone.svg" class="w-6 h-6 " alt="phone"/>
@@ -822,7 +850,7 @@
     </section>
 
     <section class="py-16 blur-background">
-      <div class="container mx-auto px-4 max-w-[1080px] space-y-8">
+      <div class="container mx-auto px-4 max-w-[1280px] space-y-8">
         <!-- Main Title -->
         <h2 class="text-center text-4xl font-semibold mb-16">
           Der Rohrreinigung Service in <span class="text-[#1B6F8F]">Ihrer Nähe</span>
@@ -834,15 +862,21 @@
             Professionelle <span class="text-[#1B6F8F]">Rohrreiniger</span>
           </h3>
           <p class="text-gray-700">
-            Das Team setzt sich aus <strong>erfahrenen Rohrreinigern zusammen</strong>, die sich durch ihre <strong>Fachkompetenz</strong>
-            und <strong>Zuverlässigkeit</strong> auszeichnen. Wir sind spezialisiert auf die <strong>schnelle und
+            Das Team setzt sich aus <strong>erfahrenen Rohrreinigern zusammen</strong>, die sich durch ihre
+            <strong>Fachkompetenz</strong>
+            und <strong>Zuverlässigkeit</strong> auszeichnen. Wir sind spezialisiert auf die <strong>schnelle
+            und
             effiziente
-            Beseitigung</strong> aller Arten von <strong>Rohrproblemen</strong> in Ihrer Nähe und helfen <strong>gerne
-            weiter</strong>. Es sind oft nur die <strong>kleinen und selbstverständlichen</strong> Dinge die unseren
+            Beseitigung</strong> aller Arten von <strong>Rohrproblemen</strong> in Ihrer Nähe und helfen
+            <strong>gerne
+              weiter</strong>. Es sind oft nur die <strong>kleinen und selbstverständlichen</strong> Dinge
+            die unseren
             <strong>Alltag</strong>
-            erleichtern, darum ist es <strong>wichtig die Rohre</strong> und <strong>Wasserleitungen</strong> stehts
-            <strong>funktionieren</strong>. Vertrauen Sie auf unser <strong>Know-how</strong>, um Ihre <strong>Rohrleitungen
-            und Sanitäranlagen</strong> in einwandfreiem Zustand zu halten.
+            erleichtern, darum ist es <strong>wichtig die Rohre</strong> und
+            <strong>Wasserleitungen</strong> stehts
+            <strong>funktionieren</strong>. Vertrauen Sie auf unser <strong>Know-how</strong>, um Ihre
+            <strong>Rohrleitungen
+              und Sanitäranlagen</strong> in einwandfreiem Zustand zu halten.
           </p>
         </div>
 
@@ -852,16 +886,22 @@
             Rohr- und <span class="text-[#1B6F8F]">Abflussreinigung</span>
           </h3>
           <p class="text-gray-700">
-            <strong>Verstopfungen</strong> in <strong>Rohren und Abflüssen</strong> können unerwartet auftreten und
+            <strong>Verstopfungen</strong> in <strong>Rohren und Abflüssen</strong> können unerwartet
+            auftreten und
             <strong>schwerwiegende
-              Beeinträchtigungen</strong> für Ihren Alltag darstellen. Es kann nicht nur sein, dass Sie die
+              Beeinträchtigungen</strong> für Ihren Alltag darstellen. Es kann nicht nur sein, dass Sie
+            die
             <strong>Toilette
-              oder das Waschbecken</strong> nicht mehr benutzen können, sondern das <strong>Wasser kann auch
-            austreten</strong> und einen <strong>Wasserschaden</strong> verursachen. Die <strong>Experten</strong>
+              oder das Waschbecken</strong> nicht mehr benutzen können, sondern das <strong>Wasser kann
+            auch
+            austreten</strong> und einen <strong>Wasserschaden</strong> verursachen. Die
+            <strong>Experten</strong>
             nutzen
             ihre Erfahrung,
-            um <strong>Verstopfungen schnell und gründlich</strong> zu entfernen. Regelmäßige Wartung durch unsere
-            <strong>Fachleute in Ihrer Nähe</strong> kann helfen, <strong>zukünftige Probleme zu verhindern</strong>.
+            um <strong>Verstopfungen schnell und gründlich</strong> zu entfernen. Regelmäßige Wartung durch
+            unsere
+            <strong>Fachleute in Ihrer Nähe</strong> kann helfen, <strong>zukünftige Probleme zu
+            verhindern</strong>.
           </p>
         </div>
 
@@ -871,15 +911,19 @@
             Notdienst für <span class="text-[#1B6F8F]">Rohrreinigung und Rohrbrüche</span>
           </h3>
           <p class="text-gray-700">
-            Rohrbrüche und <strong>dringende Verstopfungen</strong> warten nicht auf „<strong>Bürozeiten</strong>".
+            Rohrbrüche und <strong>dringende Verstopfungen</strong> warten nicht auf
+            „<strong>Bürozeiten</strong>".
             Unser
             <strong>Rohreinigungs-Notdienst</strong> ist rund um die Uhr verfügbar, um bei
             <strong>Notfällen</strong>
-            schnell und effektiv zu <strong>reagieren</strong>. Egal ob <strong>nachts, am Wochenende oder an
-            Feiertagen</strong>, wir sind nur einen <strong>Anruf</strong> entfernt. Darum rufen Sie uns <strong>jetzt
-            schnellst möglichst</strong> an und fordern Sie den <strong>Rohrreinigung Notdienst in Ihrer
+            schnell und effektiv zu <strong>reagieren</strong>. Egal ob <strong>nachts, am Wochenende oder
+            an
+            Feiertagen</strong>, wir sind nur einen <strong>Anruf</strong> entfernt. Darum rufen Sie uns
+            <strong>jetzt
+              schnellst möglichst</strong> an und fordern Sie den <strong>Rohrreinigung Notdienst in Ihrer
             Nähe</strong> an –
-            damit sind Sie auf der <strong>Sicheren Seite</strong> und können sich <strong>entspannt</strong>
+            damit sind Sie auf der <strong>Sicheren Seite</strong> und können sich
+            <strong>entspannt</strong>
             zurücklehnen.
           </p>
         </div>
@@ -890,15 +934,21 @@
             Hilfe bei <span class="text-[#1B6F8F]">verstopftem Siphon oder Waschbecken</span>
           </h3>
           <p class="text-gray-700">
-            Ein <strong>verstopfter Siphon</strong> oder ein blockiertes <strong>Waschbecken</strong> kann zu
+            Ein <strong>verstopfter Siphon</strong> oder ein blockiertes <strong>Waschbecken</strong> kann
+            zu
             erheblichen
-            <strong>Unannehmlichkeiten</strong> und <strong>potenziellen Wasserschäden</strong> führen. Die <strong>Fachmänner
-            der Rohrreinigung</strong> sind darauf <strong>spezialisiert</strong>, solche Probleme <strong>zügig und
-            ohne
-            große Störungen</strong> für Ihren Haushalt zu lösen. Die <strong>Experten stellen sicher</strong>,
-            dass alles wieder reibungslos <strong>funktioniert</strong> und beraten Sie gerne, <strong>wie solche
+            <strong>Unannehmlichkeiten</strong> und <strong>potenziellen Wasserschäden</strong> führen. Die
+            <strong>Fachmänner
+              der Rohrreinigung</strong> sind darauf <strong>spezialisiert</strong>, solche Probleme
+            <strong>zügig und
+              ohne
+              große Störungen</strong> für Ihren Haushalt zu lösen. Die <strong>Experten stellen
+            sicher</strong>,
+            dass alles wieder reibungslos <strong>funktioniert</strong> und beraten Sie gerne, <strong>wie
+            solche
             Probleme</strong>
-            in Zukunft vermieden werden können. Wenn Sie eine <strong>Rohrverstopfung</strong> haben und einen
+            in Zukunft vermieden werden können. Wenn Sie eine <strong>Rohrverstopfung</strong> haben und
+            einen
             <strong>Rohrreiniger</strong> in Ihrer Nähe benötigen, dann<strong>rufen Sie uns an</strong>.
           </p>
         </div>
@@ -909,7 +959,7 @@
   <!--  Impressum-->
   <div id="impressum" class="hidden">
     <section class="py-16">
-      <div class="max-w-[1080px] mx-auto container flex flex-col gap-y-4">
+      <div class="max-w-[1280px] mx-auto container flex flex-col gap-y-4">
         <p class="text-3xl font-semibold">Impressum</p>
 
         <p class="">Bundesweite Partner in Ihrer Region für garantierte, kurze Anfahrtswege!</p>
@@ -917,62 +967,84 @@
         <h2 class="text-base font-semibold">Angaben gemäß § 5 TMG:</h2>
 
         <address>
-          Martin Ben Mohamed<br>
-          Emsring 3<br>
-          44628 Herne<br>
-          Deutschland
+          David Kanalservice<br>
+          USt.-IdNr: DE326895466<br>
+          D.Hoang<br>
+          Kaiserstraße 79<br>
+          60329 Frankfurt am Main, Deutschland
         </address>
 
         <h2 class="text-base font-semibold">Kontakt:</h2>
 
         <p>
-          Telefon: 01579 250 2608<br>
-          E-Mail: info@rohreinigung-thiele.de
+          Telefon: 015739732385<br>
+          E-Mail: info@davidkanalservice.de
         </p>
 
         <h2 class="text-base font-semibold">Haftungsausschluss:</h2>
 
         <p>Wir sind eine reine Vermittlungsfirma, welche Aufträge ausschließlich an selektierte und befugte
-          Rohreinigunfirmen übermittelt. Deshalb übernehmen wir keine Haftung für die Durchführung, für die Preise für
-          das Arbeitstempo und die Qualität der Firmen, mit denen wir kooperieren. Bitte beachten Sie hierbei, dass wir
-          ausschließlich als Übermittler fungieren und keinerlei Haftungsansprüche übernehmen. Sobald Sie also einen
-          Auftrag erteilen, entsteht ein Vertrag zwischen Ihnen (Auftraggeber) und dem örtlichen Partner
-          (Auftragnehmer). Bei Haftungsansprüchen richten Sie diese an den Partner, welcher bei Ihnen den Auftrag
-          ausgeführt hat und klären alles mit ihm ab. Wir vermitteln nur und sind demnach keine Ansprechpartner. Die
-          Daten der Partnerfirma können Sie dem Formular entnehmen, welches sie an Ort und Stelle beim Einsatz
-          bekommen.</p>
+          Rohrreinigungfirmen übermittelt. Deshalb übernehmen wir keine Haftung für die Durchführung, für die
+          Preise, für das Arbeitstempo und die Qualität der Firmen, mit denen wir kooperieren. Bitte beachten
+          Sie hierbei, dass wir ausschließlich als Übermittler fungieren und keinerlei Haftungsansprüche
+          übernehmen. Sobald Sie also einen Auftrag erteilen, entsteht ein Vertrag zwischen Ihnen
+          (Auftraggeber) und dem örtlichen Partner (Auftragnehmer). Bei Haftungsansprüchen richten Sie diese
+          an den Partner, welcher bei Ihnen den Auftrag ausgeführt hat und klären alles mit ihm ab. Wir
+          vermitteln nur und sind demnach keine Ansprechpartner. Die Daten der Partnerfirma können Sie dem
+          Formular entnehmen, welches sie an Ort und Stelle beim Einsatz bekommen.
+        </p>
 
         <h2 class="text-base font-semibold">Haftung für Inhalte</h2>
 
-        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
-          Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Dienstanbieter sind wir gemäß § 7 Abs.1
-          TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG
-          sind wir als Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
-          überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen
-          zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon
+        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
+          und
+          Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Dienstanbieter sind wir gemäß
+          § 7 Abs.1
+          TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis
+          10 TMG
+          sind wir als Dienstanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+          Informationen zu
+          überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+          Verpflichtungen
+          zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben
+          hiervon
           unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
-          Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte
+          Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
+          Inhalte
           umgehend entfernen.</p>
 
         <h2 class="text-base font-semibold">Haftung für Links</h2>
 
-        <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
-          Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
-          Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden
-          zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt
-          der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
-          konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden
+        <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss
+          haben.
+          Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+          verlinkten
+          Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten
+          Seiten wurden
+          zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum
+          Zeitpunkt
+          der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist
+          jedoch ohne
+          konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
+          Rechtsverletzungen werden
           wir derartige Links umgehend entfernen.</p>
 
         <h2 class="text-base font-semibold">Urheberrecht</h2>
 
-        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
-          Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen
-          des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und
-          Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
-          dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere
-          werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung
-          aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden
+        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+          deutschen
+          Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb
+          der Grenzen
+          des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+          Downloads und
+          Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die
+          Inhalte auf
+          dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet.
+          Insbesondere
+          werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+          Urheberrechtsverletzung
+          aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
+          Rechtsverletzungen werden
           wir derartige Inhalte umgehend entfernen.</p>
 
       </div>
@@ -982,28 +1054,35 @@
   <!--Datenschutz-->
   <div id="datenschutz" class="hidden">
     <section class="py-16">
-      <div class="max-w-[1080px] mx-auto container flex flex-col gap-y-4">
+      <div class="max-w-[1280px] mx-auto container flex flex-col gap-y-4">
         <h1 class="text-3xl font-semibold">Datenschutz</h1>
 
-        <h2 class="text-base font-semibold">A. Name und Kontaktdaten des für die Verarbeitung Verantwortlichen</h2>
+        <h2 class="text-base font-semibold">A. Name und Kontaktdaten des für die Verarbeitung
+          Verantwortlichen</h2>
         <p>Diese Datenschutz-Information gilt für die Datenverarbeitung durch www.rohrreinigung-thiele.de:<br>
-          Verantwortlicher: Martin Ben Mohamed, Inhaber Martin Ben Mohamed, Emsring, Herne 44628, Telefon 01579 250 2608
-          E-Mail info@rohrreinigung-thiele.de.</p>
+          Verantwortlicher: Martin Ben Mohamed, Inhaber Martin Ben Mohamed, Emsring, Herne 44628, Telefon
+          01579 250 2608
+          E-Mail info@davidkanalservice.de.</p>
 
         <h2 class="text-base font-semibold">B. Erhebung und Speicherung personenbezogener Daten sowie Art und
           Verwendungszweck</h2>
 
         <h3 class="text-base font-semibold">1) Beim Besuch der Website</h3>
-        <p>Beim Aufrufen unserer Webseite www.rohrreinigung-thiele.de werden durch den auf Ihrem Endgerät zum Einsatz
-          kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden
-          temporär in einem sog. Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis
+        <p>Beim Aufrufen unserer Webseite www.rohrreinigung-thiele.de werden durch den auf Ihrem Endgerät zum
+          Einsatz
+          kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese
+          Informationen werden
+          temporär in einem sog. Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun
+          erfasst und bis
           zur automatisierten Löschung gespeichert:</p>
         <ul class="list-disc pl-6">
           <li>IP-Adresse des anfragenden Rechners,</li>
           <li>Datum und Uhrzeit des Zugriffs,</li>
           <li>Name und URL der abgerufenen Datei,</li>
           <li>Website, von der aus der Zugriff erfolgt (Referrer-URL),</li>
-          <li>verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers.</li>
+          <li>verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres
+            Access-Providers.
+          </li>
         </ul>
 
         <p>Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:</p>
@@ -1014,18 +1093,22 @@
         </ul>
 
         <p>Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes
-          Interesse folgt aus oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen
+          Interesse folgt aus oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die
+          erhobenen
           Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen.</p>
 
-        <p>Darüber hinaus setzen wir beim Besuch unserer Website Cookies sowie Analysedienste ein. Nähere Erläuterungen
+        <p>Darüber hinaus setzen wir beim Besuch unserer Website Cookies sowie Analysedienste ein. Nähere
+          Erläuterungen
           dazu erhalten Sie unter den Punkten D. und E. dieser Datenschutzerklärung.</p>
 
         <!-- Tiếp tục với các phần còn lại theo cùng cấu trúc -->
 
         <h2 class="text-base font-semibold">I. Aktualität und Änderung dieser Datenschutzerklärung</h2>
         <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2024</p>
-        <p>Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher
-          beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die
+        <p>Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter
+          gesetzlicher
+          beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu
+          ändern. Die
           jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website unter
           www.rohrreinigung-thiele.de/datenschutz von Ihnen abgerufen und ausgedruckt werden.</p>
       </div>
@@ -1035,7 +1118,7 @@
   <!-- Why Choose Us Section -->
   <section>
     <div class="bg-primary flex items-center p-4 overflow-hidden">
-      <div class="rounded-lg container mx-auto px-4 bg-white max-w-[1080px] overflow-hidden">
+      <div class="rounded-lg container mx-auto px-4 bg-white max-w-[1280px] overflow-hidden">
         <div class="swiper">
           <div class="swiper-wrapper flex items-center">
             <div class="swiper-slide">
@@ -1071,7 +1154,7 @@
 
   <!-- Contact Form Section -->
   <section id="contact" class="py-16 blur-background">
-    <div class="max-w-[1080px] mx-auto container">
+    <div class="max-w-[1280px] mx-auto container">
       <h2 class="text-4xl font-bold mb-8 text-center">
         <span class="text-gray-800">Unser</span>
         <span class="text-primary">Kontaktformular</span>
@@ -1080,7 +1163,7 @@
         <!-- Email Button -->
         <a
           class="p-4 bg-blue-500 text-white rounded-lg font-medium text-center flex items-center justify-center gap-x-2"
-          href="mailto:example@example.com"
+          href="mailto:info@davidkanalservice.de"
         >
           <img src="./images/envelop.svg" class="w-6 h-6" alt="envelop"/>
           E-Mail senden
@@ -1105,7 +1188,7 @@
       </div>
     </div>
 
-    <div class="max-w-[1080px] mx-auto bg-white rounded-md border shadow-lg p-8 mt-8">
+    <div class="max-w-[1280px] mx-auto bg-white rounded-md border shadow-lg p-8 mt-8">
       <h2 class="text-4xl font-bold mb-6">
         <span class="text-gray-800">So erreichen</span>
         <span class="text-primary">Sie uns</span>
@@ -1171,28 +1254,32 @@
       <!-- Contact Information -->
       <div class="space-y-4">
         <div class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none"
+               viewBox="0 0 24 24"
                stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
           <span class="font-medium">Telefon:</span>
-          <a href="tel:0123456789" class="text-blue-600 hover:text-blue-800">01579 250 2608</a>
+          <a href="tel:015739732385" class="text-blue-600 hover:text-blue-800">01579 250 2608</a>
         </div>
         <div class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none"
+               viewBox="0 0 24 24"
                stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
           <span class="font-medium">E-Mail:</span>
-          <a href="mailto:info@rohrreinigung-david.de" class="text-blue-600 hover:text-blue-800">info@rohrreinigung-david.de</a>
+          <a href="mailto:info@davidkanalservice.de"
+             class="text-blue-600 hover:text-blue-800">info@davidkanalservice.de</a>
         </div>
       </div>
 
       <!-- Response Time Notice -->
       <div class="mt-8 text-gray-600 space-y-2">
-        <p>Wir antworten auf Anrufe sofort. E-Mails werden bei uns innerhalb von wenigen Stunden beantwortet.</p>
+        <p>Wir antworten auf Anrufe sofort. E-Mails werden bei uns innerhalb von wenigen Stunden
+          beantwortet.</p>
         <p class="font-medium">Wir freuen uns auf Ihre Anfrage!</p>
       </div>
     </div>
@@ -1259,7 +1346,7 @@
   <div class="fixed z-40 right-0 bottom-0 p-2">
     <!-- Call Button -->
     <a
-      href="tel:+1234567890"
+      href="tel:015739732385"
       class=" p-4 bg-primary border-2 border-white text-white rounded-full mb-2 font-medium text-center flex items-center justify-center gap-x-2"
     >
       <img src="./images/phone.svg" class="w-6 h-6 " alt="phone"/>
@@ -1278,7 +1365,8 @@
     <div class="fixed inset-y-0 right-0 w-64 bg-white p-6 shadow-xl">
       <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleMobileMenu()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
       <nav class="mt-8">
@@ -1296,118 +1384,118 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="module">
-  document.addEventListener('DOMContentLoaded', function () {
-     new Swiper('.swiper', {
-      loop: true, // Tự động lặp lại
-      autoplay: {
-        delay: 3000, // Tự động chuyển slide mỗi 3 giây
-      },
-      slidesPerView: 1,
-      spaceBetween: 10,
-      breakpoints: {
-        '480': {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-        '640': {
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-        '768': {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-        '1080': {
-          slidesPerView: 4,
-          spaceBetween: 50,
-        },
-      },
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper', {
+            loop: true, // Tự động lặp lại
+            autoplay: {
+                delay: 3000, // Tự động chuyển slide mỗi 3 giây
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                '480': {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                '640': {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+                '768': {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+                '1280': {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
     });
-  });
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-    function activateTab(button) {
-      // Remove active class from all buttons
-      tabButtons.forEach(btn => {
-        btn.classList.remove('active');
-        btn.classList.remove('bg-primary');
-        btn.classList.remove('text-white');
-        btn.classList.add('bg-white');
-      });
+        function activateTab(button) {
+            // Remove active class from all buttons
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.remove('bg-primary');
+                btn.classList.remove('text-white');
+                btn.classList.add('bg-white');
+            });
 
-      // Add active class to clicked button
-      button.classList.add('active');
-      button.classList.add('bg-gray-100');
-      button.classList.remove('bg-white');
+            // Add active class to clicked button
+            button.classList.add('active');
+            button.classList.add('bg-gray-100');
+            button.classList.remove('bg-white');
 
-      // Hide all tab contents
-      tabContents.forEach(content => {
-        content.classList.add('hidden');
-      });
+            // Hide all tab contents
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
 
-      // Show selected tab content
-      const tabId = button.getAttribute('data-tab');
-      const selectedContent = document.getElementById(tabId);
-      selectedContent.classList.remove('hidden');
-    }
+            // Show selected tab content
+            const tabId = button.getAttribute('data-tab');
+            const selectedContent = document.getElementById(tabId);
+            selectedContent.classList.remove('hidden');
+        }
 
-    // Add click event to each tab button
-    tabButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        activateTab(this);
-      });
+        // Add click event to each tab button
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                activateTab(this);
+            });
+        });
+
+        // Activate the first tab when the page loads
+        activateTab(tabButtons[0]);
     });
 
-    // Activate the first tab when the page loads
-    activateTab(tabButtons[0]);
-  });
 
+    // Lấy đường dẫn từ URL
+    const path = window.location.pathname; // "/impressum/" hoặc "/about/"
+    const page = path.split('/')[1]; // Lấy phần đầu tiên sau domain, ví dụ: "impressum"
 
-  // Lấy đường dẫn từ URL
-  const path = window.location.pathname; // "/impressum/" hoặc "/about/"
-  const page = path.split('/')[1]; // Lấy phần đầu tiên sau domain, ví dụ: "impressum"
+    // Hiển thị nội dung tương ứng
+    if (page) {
+        const targetElement = document.getElementById(page);
 
-  // Hiển thị nội dung tương ứng
-  if (page) {
-    const targetElement = document.getElementById(page);
-
-    if (targetElement) {
-      targetElement.classList.remove("hidden");
-      document.getElementById("home").classList.add("hidden");
-    } else {
-      // Nếu không tìm thấy nội dung phù hợp, hiển thị trang mặc định
-      document.getElementById("home").classList.remove("hidden");
+        if (targetElement) {
+            targetElement.classList.remove("hidden");
+            document.getElementById("home").classList.add("hidden");
+        } else {
+            // Nếu không tìm thấy nội dung phù hợp, hiển thị trang mặc định
+            document.getElementById("home").classList.remove("hidden");
+        }
     }
-  }
 
 
-  // Add mobile menu functionality here if needed
-  const mobileMenuButton = document.querySelector('[data-mobile-menu]');
-  const mobileMenu = document.querySelector('[data-menu]');
+    // Add mobile menu functionality here if needed
+    const mobileMenuButton = document.querySelector('[data-mobile-menu]');
+    const mobileMenu = document.querySelector('[data-menu]');
 
-  // Menu mobile
-  function toggleMenu() {
-    const mobileMenu = document.getElementById('mobileMenu');
-    mobileMenu.classList.toggle('hidden');  // Chuyển đổi trạng thái ẩn/hiện của menu
-  }
+    // Menu mobile
+    function toggleMenu() {
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenu.classList.toggle('hidden');  // Chuyển đổi trạng thái ẩn/hiện của menu
+    }
 
 
-  if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  }
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
 
-  // Mobile Menu Toggle
-  function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  }
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
 </script>
 </body>
 </html>
